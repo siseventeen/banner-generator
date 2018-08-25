@@ -61,8 +61,8 @@ function setup() {
     angleMode(DEGREES);
     lineH = random(0,3);
     lineS = 90;
-    lineB = 90;
-    lineA = 40;
+    lineB = 80;
+    lineA = 20;
 	// drawParticle1();
 	//image(img, 0, 0, 1128, 640);
 
@@ -83,13 +83,13 @@ function draw() {
     }
   endShape(CLOSE);
   radius -= 7;
-  lineA -= 0.15;
+  lineA -= 0.2;
 
 	if(updateFlag)
 	{
 		updateFlag = false;
 		    radius = random(1300,1800);
-			    lineA = 40;
+			    lineA = 20;
 		clear();
 		var medicalColor=color(medicalColor_H,medicalColor_S,medicalColor_B);
 		background(medicalColor);
@@ -117,8 +117,8 @@ function drawText(){
 
 	textSize(70);
 	textStyle(BOLD);
-	fill(color('#FB0233'));
-	fill(color('#FFF459'));
+
+	fill(color('#FF0033'));
 	if(timeInterval.length == 0)
 	{
 		return;

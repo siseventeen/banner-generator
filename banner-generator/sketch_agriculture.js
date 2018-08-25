@@ -61,8 +61,8 @@ function setup() {
     angleMode(DEGREES);
     lineH = random(20,25);
     lineS = 90;
-    lineB = 90;
-    lineA = 40;
+    lineB = 70;
+    lineA = 30;
 	// drawParticle1();
 	//image(img, 0, 0, 1128, 640);
 
@@ -83,13 +83,13 @@ function draw() {
     }
   endShape(CLOSE);
   radius -= 7;
-  lineA -= 0.15;
+  lineA -= 0.2;
 
 	if(updateFlag)
 	{
 		updateFlag = false;
 		    radius = random(1300,1800);
-			    lineA = 40;
+			    lineA = 30;
 		clear();
 		var medicalColor=color(medicalColor_H,medicalColor_S,medicalColor_B);
 		background(medicalColor);
